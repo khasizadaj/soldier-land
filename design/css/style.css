@@ -22,9 +22,13 @@ ol {
   align-items: center;
 }
 
+.images {
+  width: 100%;
+}
+
 .backgorund-image {
-  width: 1120px;
-  /* width: 100%; */
+  /* width: 1120px; */
+  width: 100%;
   height: 260px;
   border-radius: 16px;
   position: relative;
