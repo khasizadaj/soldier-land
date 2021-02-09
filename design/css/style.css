@@ -22,11 +22,11 @@ ol {
   align-items: center;
 }
 
-.images {
+.wrapper-images {
   width: 100%;
 }
 
-.backgorund-image {
+.background-image {
   /* width: 1120px; */
   width: 100%;
   height: 260px;
@@ -34,7 +34,7 @@ ol {
   position: relative;
 }
 
-.profile-image {
+.wrapper-profile-image {
   border-radius: 50%;
   border: 3px solid rgb(252, 252, 252);
   position: absolute;
@@ -50,15 +50,16 @@ ol {
   padding-left: 3%;
 } */
 
-.name {
+.full-name {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   font-weight: bold;
   margin-top: 200px;
 }
 
-.vezife {
-  margin-left: 150px;
+.position {
+  /* margin-left: 150px; */
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   /* font-weight: 600; */
@@ -76,17 +77,18 @@ ol {
   margin-top: 100px;
 }
 
-.content {
+
+/* .content {
   width: 90%;
-  height: 80vh;
-  margin: auto auto;
-}
+  height: 80vh; 
+  margin: auto auto; 
+}  */
 
 .about-section {
   display: flex;
 }
 
-.about-section-2 {
+.about-section-data {
   margin-left: 50px;
   padding-left: 60px;
   border-left: 1px solid #e5e5e5;
@@ -101,7 +103,7 @@ ol {
   padding-left: 15px;
 }
 
-.about-section-1 h4 {
+.about-section-tabs h4 {
   font-size: 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -111,7 +113,7 @@ ol {
   padding: 5px 15px;
 }
 
-.about-section-1 h3 {
+.about-section-tabs h3 {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
@@ -166,6 +168,8 @@ ol {
   box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
   margin-top: 50px;
   margin-bottom: 40px;
+  height: auto;
+  padding: 0 40px;
 }
 
 .stories h1 {
@@ -177,13 +181,16 @@ ol {
   padding-top: 20px;
 }
 
-.content {
-  height: auto;
-}
+
 
 .stories span {
   display: block;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  padding-bottom: 50px;
+  color: #4f4f4f;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .stories ul {
@@ -191,14 +198,14 @@ ol {
 }
 
 .stories ul li {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #4f4f4f;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-.footer-item {
+.wrapper-actions-item {
   border-radius: 30px;
   height: 40px;
   width: 188.72px;
@@ -208,13 +215,13 @@ ol {
   align-items: center;
 }
 
-.footer {
+.wrapper-actions {
   margin-top: 20px;
   padding-bottom: 200px;
   display: flex;
 }
 
-.footer span {
+.wrapper-actions span {
   color: #02d464;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
