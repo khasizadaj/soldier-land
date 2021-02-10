@@ -234,7 +234,7 @@ ol {
   width: 200px;
 }
 
-.pagination span {
+.pagination .page {
   color: #333;
   padding: 10px;
 }
@@ -246,11 +246,11 @@ ol {
   margin-left: 50%;
 }
 
-.pagination span:nth-child(3) {
+.pagination .current-page {
   color: #02d464;
 }
 
-.pagination span:nth-child(3)::after {
+.pagination .current-page::after {
   content: "";
   display: block;
   width: 100%;
