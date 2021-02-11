@@ -85,6 +85,18 @@ ol {
   margin: auto auto; 
 }  */
 
+#main-info,#medal{
+  cursor: pointer;
+}
+
+#active-1{
+  display: block;
+}
+
+#active{
+  display: block;
+}
+
 .about-section {
   display: flex;
 }
@@ -94,6 +106,14 @@ ol {
   padding-left: 60px;
   border-left: 1px solid #e5e5e5;
 }
+
+.about-section-data p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
 
 .about-name {
   font-size: 24px;
