@@ -76,14 +76,10 @@ ol {
   border-radius: 16px;
   box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
   margin-top: 100px;
+  padding-left: 40px;
 }
 
 
-/* .content {
-  width: 90%;
-  height: 80vh; 
-  margin: auto auto; 
-}  */
 
 #main-info,#medal{
   cursor: pointer;
@@ -115,16 +111,16 @@ ol {
 
 
 
-.about-name {
+.wrapper-header .about-header {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #828282;
   padding-top: 30px;
-  padding-left: 15px;
+  
 }
 
-.about-section-tabs h4 {
+#main-info {
   font-size: 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -134,7 +130,7 @@ ol {
   padding: 5px 15px;
 }
 
-.about-section-tabs h3 {
+#medal {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
@@ -142,7 +138,7 @@ ol {
   padding-left: 15px;
 }
 
-.birth {
+.wrapper-data h3 {
   font-family: "Montserrat", sans-serif;
   color: #828282;
   font-size: 16px;
@@ -152,7 +148,7 @@ ol {
   padding-top: 20px;
 }
 
-.birthday {
+.wrapper-data h1 {
   margin-top: 2px;
   padding-top: 2px;
   font-size: 20px;
