@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -90,104 +92,130 @@ ol {
 /* ABOUT SECTION */
 .about {
   width: 100%;
-  height: 326px;
+  /* height: 326px; */
   background-color: #ffff;
   border-radius: 16px;
   box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
   margin-top: 100px;
-  padding-left: 40px;
+  padding: 30px;
+}
+.about-section {
+  /* min-height preferred */
+  min-height: 163px;
+  margin-top: 20px;
+  display: flex;
+}
+.wrapper-tab {
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .tab {
-  cursor: pointer;
+  display: inline-block;
   font-size: 20px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   border-radius: 30px;
-  background-color: #02d464;
   padding: 5px 15px;
+  color: #828282;
 }
 
-#main-info,
-#medal-button {
-  /* cursor: pointer; */
+.active > .tab {
+  color: #fff;
+  background-color: #02d464;
 }
+
+/* #main-info,
+#medal-button {
+  cursor: pointer;
+} */
 
 #active-1 {
   display: block;
 }
 
-#active {
+/* #active {
   display: block;
-}
+} */
 
 .about-section {
-  display: flex;
 }
 
 .about-section-data {
+  display: none;
   margin-left: 50px;
-  padding-left: 60px;
+  padding-top: 20px;
+  padding-left: 50px;
   border-left: 1px solid #e5e5e5;
 }
+.about-section-data.active {
+  display: block;
+}
 
-.about-section-data .medal-mem {
-  font-family: "Montserrat", sans-serif;
+.medal-mem {
+  /* font-family: "Montserrat", sans-serif; */
   font-size: 20px;
   font-weight: 600;
 }
 
-#medal-data{
+/* #medal-data{
   display: none;
+} */
+.header {
+  font-size: 24px;
+  font-weight: 600;
+  color: #828282;
 }
-
-.wrapper-header .about-header {
+/* .about-header {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #828282;
   padding-top: 30px;
-}
+} */
 
-#main-info {
-  /* font-size: 20px;
+/* #main-info {
+  font-size: 20px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   border-radius: 30px;
   background-color: #02d464;
-  padding: 5px 15px; */
-}
+  padding: 5px 15px;
+} */
 
-#medal-button {
+/* #medal-button {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
   font-weight: 700;
   padding-left: 15px;
-}
+} */
 
+.wrapper-data {
+  margin-bottom: 20px;
+}
 .wrapper-data .label {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   color: #828282;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 2px;
-  padding-bottom: 2px;
-  padding-top: 20px;
+  /* margin-bottom: 2px; */
+  /* padding-bottom: 2px; */
+  margin-bottom: 4px;
+  padding-bottom: 4px;
+  /* padding-top: 20px; */
 }
 
 .wrapper-data .data {
-  margin-top: 2px;
-  padding-top: 2px;
+  /* margin-top: 2px; */
+  /* padding-top: 2px; */
   font-size: 20px;
   color: #333;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
 }
 
-.place {
+/* .place {
   color: #828282;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -203,7 +231,7 @@ ol {
   color: #4f4f4f;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-}
+} */
 
 /* STORIES */
 .wrapper-stories {
@@ -218,7 +246,7 @@ ol {
   padding: 0 40px;
 }
 
-.wrapper-stories .stroies-header {
+.stroies-header {
   color: #828282;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -237,7 +265,7 @@ ol {
   font-weight: 400;
 }
 
-.wrapper-stories .stories  {
+.wrapper-stories .stories {
   padding-left: 0;
 }
 
@@ -254,7 +282,7 @@ ol {
   margin-bottom: 60px;
   display: flex;
   justify-content: flex-start;
-  
+
   /* general css for this section */
   color: #333;
   font-size: 16px;
@@ -264,14 +292,13 @@ ol {
 .wrapper-actions-item {
   border-radius: 30px;
   height: 40px;
-  /* width: 188.72px;  add padding instead*/ 
-  padding-right: 10px; 
+  /* width: 188.72px;  add padding instead*/
+  padding-right: 10px;
   background-color: #d8f8e7;
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
-
 
 .actions-span {
   color: #02d464;
@@ -305,9 +332,8 @@ ol {
   background-color: #02d464;
 }
 
-
 /* JAVASCRIPT CSS */
-
+/* 
 #medal-button.medal-js{
     background-color: #02d464;
     font-weight: 100;
@@ -340,7 +366,6 @@ ol {
     color: #fff;
     padding: 5px 15px;
     margin-left: 5px;
-
-}
+} */
 
 /* END JAVASCRIPT CSS */
