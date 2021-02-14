@@ -100,7 +100,7 @@ ol {
 }
 
 #main-info,
-#medal {
+#medal-button {
   cursor: pointer;
 }
 
@@ -122,14 +122,15 @@ ol {
   border-left: 1px solid #e5e5e5;
 }
 
-.about-section-data p {
+.about-section-data .medal-mem {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
-
-
+#medal-data{
+  display: none;
+}
 
 .wrapper-header .about-header {
   font-size: 24px;
@@ -150,7 +151,7 @@ ol {
   padding: 5px 15px;
 }
 
-#medal {
+#medal-button {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   color: #828282;
@@ -158,7 +159,7 @@ ol {
   padding-left: 15px;
 }
 
-.wrapper-data h3 {
+.wrapper-data .label {
   font-family: "Montserrat", sans-serif;
   color: #828282;
   font-size: 16px;
@@ -168,7 +169,7 @@ ol {
   padding-top: 20px;
 }
 
-.wrapper-data h1 {
+.wrapper-data .data {
   margin-top: 2px;
   padding-top: 2px;
   font-size: 20px;
@@ -196,7 +197,7 @@ ol {
 }
 
 /* STORIES */
-.stories {
+.wrapper-stories {
   width: 100%;
   /* height: 720px; */
 
@@ -209,7 +210,7 @@ ol {
   padding: 0 40px;
 }
 
-.stories h1 {
+.wrapper-stories .stroies-header {
   color: #828282;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
@@ -218,7 +219,7 @@ ol {
   padding-top: 20px;
 }
 
-.stories span {
+.wrapper-stories .story-author {
   display: block;
   /* margin-top: 10px; */
   padding-bottom: 50px;
@@ -228,11 +229,11 @@ ol {
   font-weight: 400;
 }
 
-.stories ul {
+.wrapper-stories .stories  {
   padding-left: 0;
 }
 
-.stories ul li {
+.wrapper-stories .stories .story-text {
   padding-bottom: 10px;
   color: #4f4f4f;
   font-size: 20px;
@@ -256,7 +257,7 @@ ol {
   display: flex;
 }
 
-.wrapper-actions span {
+.wrapper-actions .span-button{
   color: #02d464;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -292,3 +293,50 @@ ol {
   height: 2px;
   background-color: #02d464;
 }
+
+
+/* JAVASCRIPT CSS */
+
+#medal-button.medal-js{
+    background-color: #02d464;
+    font-weight: 100;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+
+#main-info.main-js{
+  color: #828282;
+  background-color: #fff;
+  border-radius: none;
+  font-weight: 700;
+}
+
+#medal-button.medal-js-1{
+
+  color: #828282;
+  background-color: #fff;
+  border-radius: none;
+  font-weight: 700;
+
+}
+
+#main-info.main-js-1{
+    background-color: #02d464;
+    font-weight: 100;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 15px;
+    margin-left: 5px;
+
+}
+
+
+
+
+
+
+
+
+/* END JAVASCRIPT CSS */
