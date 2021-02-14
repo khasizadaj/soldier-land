@@ -3,10 +3,8 @@ var main = document.getElementById('main-info')
 
 document.getElementById('active-1').style.display = 'none'
 
-
-
-medal.addEventListener('click' , function() {
-    if(document.getElementById('active-1').style.display = 'none'){
+medal.addEventListener('click', function () {
+    if (document.getElementById('active-1').style.display = 'none') {
         document.getElementById('active').style.display = 'none'
         document.getElementById('active-1').style.display = 'block'
 
@@ -22,12 +20,6 @@ medal.addEventListener('click' , function() {
         medal.style.padding = '5px 15px'
         medal.style.width = '60%'
         medal.style.marginLeft = '5px'
-
-        
-
-        
-
-       
     }
 })
 
@@ -36,11 +28,10 @@ medal.addEventListener('click' , function() {
 
 // Main info
 
-main.addEventListener('click' , function() {
-    if(document.getElementById('active').style.display = 'none'){
+main.addEventListener('click', function () {
+    if (document.getElementById('active').style.display = 'none') {
         document.getElementById('active-1').style.display = 'none'
         document.getElementById('active').style.display = 'block'
-
 
         medal.style.color = '#828282'
         medal.style.backgroundColor = '#fff'
@@ -52,9 +43,6 @@ main.addEventListener('click' , function() {
         main.style.borderRadius = '30px'
         main.style.fontWeight = '100'
         main.style.padding = '5px 15px'
-
-       
-        
     }
 })
 
