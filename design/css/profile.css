@@ -1,38 +1,9 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* ================
 
-:root {
-  --profile-size: 320px;
-  --gray-1: #333333;
-  --gray-2: #4f4f4f;
-  --gray-3: #828282;
-}
-@media (max-width: 768px) {
-  :root {
-    --profile-size: 320px;
-    --gray-1: #333333;
-    --gray-2: #4f4f4f;
-    --gray-3: #828282;
-  }
-}
-html {
-  font-family: "Montserrat", sans-serif;
-}
+START - HEAD
 
-ul,
-ol {
-  list-style-type: none;
-}
+*/
 
-.container {
-  width: 85%;
-  margin: 40px auto;
-}
-
-/* HEAD */
 .profile {
   display: flex;
   flex-direction: column;
@@ -86,12 +57,20 @@ ol {
   color: var(--gray-3);
 }
 
-/* END HEAD */
+/* 
 
-/* ABOUT SECTION */
+END - HEAD
+
+================ */
+
+/* ================
+
+START - ABOUT
+
+*/
+
 .about {
   width: 100%;
-  /* height: 326px; */
   background-color: #ffff;
   border-radius: 16px;
   box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
@@ -99,7 +78,8 @@ ol {
   padding: 30px;
 }
 .about-section {
-  /* min-height preferred */
+  position: relative;
+  left: -5px;
   min-height: 163px;
   margin-top: 20px;
   display: flex;
@@ -114,7 +94,7 @@ ol {
   font-size: 20px;
   font-weight: 500;
   border-radius: 30px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   color: #828282;
 }
 
@@ -122,17 +102,6 @@ ol {
   color: #fff;
   background-color: #02d464;
 }
-
-
-#active-1 {
-  display: block;
-}
-
-/* #active {
-  display: block;
-} */
-
-
 
 .about-section-data {
   display: none;
@@ -145,17 +114,6 @@ ol {
   display: block;
 }
 
-
-
-
-.header {
-  font-size: 24px;
-  font-weight: 600;
-  color: #828282;
-}
-
-
-
 .wrapper-data {
   margin-bottom: 20px;
 }
@@ -164,13 +122,9 @@ ol {
   color: #828282;
   font-size: 16px;
   font-weight: 500;
-  /* margin-bottom: 2px; */
-  /* padding-bottom: 2px; */
   margin-bottom: 4px;
   padding-bottom: 4px;
-  /* padding-top: 20px; */
 }
-
 
 .wrapper-data .data {
   font-size: 20px;
@@ -179,53 +133,102 @@ ol {
   font-family: "Montserrat", sans-serif;
 }
 
+/* 
 
+END - ABOUT
 
-/* STORIES */
+================ */
+
+/* ================
+
+START - STORIES
+
+*/
 
 .wrapper-stories {
-  /* width: 100%; */
+  min-height: 340px;
   background-color: #fff;
+  color: #4f4f4f;
   border-radius: 16px;
   box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
   margin-top: 50px;
   margin-bottom: 40px;
-  /* height: auto; */
-  padding: 0 40px;
+  padding: 30px;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
 }
 
-
-.stroies-header {
-  color: #828282;
-  font-family: "Montserrat", sans-serif;
+.stories-header {
+  /* color: #828282;
   font-size: 24px;
-  font-weight: 600;
-  padding-bottom: 30px;
   padding-top: 20px;
+  font-weight: 600; */
+  margin-bottom: 30px;
+}
+.wrapper-story {
+  margin-bottom: 30px;
+}
+.wrapper-story:last-of-type {
+  margin-bottom: 0px;
+}
+.story-text {
+  margin-bottom: 10px;
 }
 
-.stories span {
+.story-author {
   display: block;
-  /* margin-top: 10px; */
-  padding-bottom: 50px;
-  color: #4f4f4f;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
-
-.wrapper-stories .stories {
+/* .wrapper-stories .stories {
   padding-left: 0;
+} */
+
+/* 
+
+END - STORIES
+
+================ */
+
+/* ================
+START - EMPTY STORIES 
+
+*/
+.empty-stories {
+  padding-bottom: 60px; /* there is padding in wrapper-stories*/
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.stories ul li {
-  padding-bottom: 10px;
-  color: #4f4f4f;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+.story-info {
+  text-align: center;
 }
+
+/* to center button properly */
+.add-story--centered {
+  /* margin-left: 50%;
+  transform: translate(-50%); */
+  margin-top: 30px;
+  margin-right: 0px;
+}
+
+/* 
+
+END EMPTY STORIES CSS 
+
+================ */
+
+/* ================
+
+START - WRAPPER ACTIONS 
+
+*/
 
 .wrapper-actions {
   margin-top: 20px;
@@ -236,46 +239,36 @@ ol {
   /* general css for this section */
   color: #333;
   font-size: 16px;
-  font-weight: 600;
 }
 
 .wrapper-actions-item {
   border-radius: 30px;
   height: 40px;
-  width: 188.72px;  /* add padding instead */
-  padding-right: 10px;
+  padding: 0 15px 0 5px;
   background-color: #d8f8e7;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
+  font-weight: 600;
+  margin-right: 30px;
 }
-
-
-/* .wrapper-actions {
-  margin-top: 20px;
-  padding-bottom: 200px;
-  display: flex;
-} */
-
 
 .actions-span {
   color: #02d464;
 }
 
 .share {
-  margin-left: 30px;
+  /* margin-left: 30px; */
   /* width: 200px; */
   white-space: nowrap;
-  padding-right: 200px;
-  font-weight: 700;
-  
+  /* padding-right: 200px; */
+  font-weight: 600;
 }
 
 .pagination {
   display: flex;
   align-items: center;
-  /* margin-left: 50%; */
   margin-left: auto;
+  font-weight: 600;
 }
 
 .pagination .page {
@@ -293,27 +286,10 @@ ol {
   height: 2px;
   background-color: #02d464;
 }
+/* 
 
-/* FREE STORIES CSS */
+END - WRAPPER ACTIONS
 
-.free-stories{
-  padding-bottom: 100px;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 50px;
-}
+================  */
 
-.story-info{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
 
-.item-1{
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 30px;
-  
-}
-
-/* END FREE STORIES CSS */
