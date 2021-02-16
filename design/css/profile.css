@@ -21,6 +21,7 @@ START - HEAD
   border-radius: 16px;
   position: relative;
 }
+
 .wrapper-profile-image {
   height: var(--profile-size);
   width: var(--profile-size);
@@ -32,6 +33,7 @@ START - HEAD
   border-radius: 50%;
   box-shadow: 0px 0px 3px #cbcbcb; /* BOX SHADOW */
 }
+
 .profile-image {
   display: block;
   margin: auto;
@@ -77,6 +79,7 @@ START - ABOUT
   margin-top: 100px;
   padding: 30px;
 }
+
 .about-section {
   position: relative;
   left: -5px;
@@ -84,6 +87,7 @@ START - ABOUT
   margin-top: 20px;
   display: flex;
 }
+
 .wrapper-tab {
   margin-top: 20px;
   cursor: pointer;
@@ -98,6 +102,7 @@ START - ABOUT
   color: #828282;
 }
 
+/* design of tab if active */
 .active > .tab {
   color: #fff;
   background-color: #02d464;
@@ -110,6 +115,7 @@ START - ABOUT
   padding-left: 50px;
   border-left: 1px solid #e5e5e5;
 }
+
 .about-section-data.active {
   display: block;
 }
@@ -159,19 +165,19 @@ START - STORIES
   font-weight: 400;
 }
 
+/* inherits from .header */
 .stories-header {
-  /* color: #828282;
-  font-size: 24px;
-  padding-top: 20px;
-  font-weight: 600; */
   margin-bottom: 30px;
 }
+
 .wrapper-story {
   margin-bottom: 30px;
 }
+
 .wrapper-story:last-of-type {
   margin-bottom: 0px;
 }
+
 .story-text {
   margin-bottom: 10px;
 }
@@ -180,10 +186,6 @@ START - STORIES
   display: block;
   font-weight: 500;
 }
-
-/* .wrapper-stories .stories {
-  padding-left: 0;
-} */
 
 /* 
 
@@ -195,6 +197,7 @@ END - STORIES
 START - EMPTY STORIES 
 
 */
+
 .empty-stories {
   padding-bottom: 60px; /* there is padding in wrapper-stories*/
   width: 50%;
@@ -212,8 +215,6 @@ START - EMPTY STORIES
 
 /* to center button properly */
 .add-story--centered {
-  /* margin-left: 50%;
-  transform: translate(-50%); */
   margin-top: 30px;
   margin-right: 0px;
 }
@@ -251,17 +252,11 @@ START - WRAPPER ACTIONS
   font-weight: 600;
   margin-right: 30px;
 }
-
+.share {
+  font-weight: 600;
+}
 .actions-span {
   color: #02d464;
-}
-
-.share {
-  /* margin-left: 30px; */
-  /* width: 200px; */
-  white-space: nowrap;
-  /* padding-right: 200px; */
-  font-weight: 600;
 }
 
 .pagination {
@@ -286,6 +281,7 @@ START - WRAPPER ACTIONS
   height: 2px;
   background-color: #02d464;
 }
+
 /* 
 
 END - WRAPPER ACTIONS
