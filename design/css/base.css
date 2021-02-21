@@ -11,17 +11,21 @@
   --gray-1: #333333;
   --gray-2: #4f4f4f;
   --gray-3: #828282;
+  --gray-4: #BDBDBD;
+  --slight-grey: #e5e5e5;
+  --white: #fefefe;
+  --main-green: #02D464;
+  --bg-green: #D8F8E7;
+  --box-shadow: 0 0 12px rgb(216, 216, 216, 0.65);
 }
 @media (max-width: 768px) {
   :root {
-    --profile-size: 320px;
-    --gray-1: #333333;
-    --gray-2: #4f4f4f;
-    --gray-3: #828282;
+    --profile-size: 280px;
   }
 }
 html {
   font-family: "Montserrat", sans-serif;
+  background-color: var(--white);
 }
 
 ul,
@@ -29,16 +33,17 @@ ol {
   list-style-type: none;
 }
 
+.container {
+  width: min(85%, 1100px);
+  margin: 40px auto;
+}
+
 .header {
   font-size: 24px;
   font-weight: 600;
-  color: #828282;
+  color: var(--gray-2);
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.container {
-  width: 85%;
-  margin: 40px auto;
-}

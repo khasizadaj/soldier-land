@@ -29,9 +29,9 @@ START - HEAD
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid var(--white);
   border-radius: 50%;
-  box-shadow: 0px 0px 3px #cbcbcb; /* BOX SHADOW */
+  box-shadow: var(--box-shadow);
 }
 
 .profile-image {
@@ -73,9 +73,8 @@ START - ABOUT
 
 .about {
   width: 100%;
-  background-color: #ffff;
   border-radius: 16px;
-  box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
+  box-shadow: var(--box-shadow);
   margin-top: 100px;
   padding: 30px;
 }
@@ -91,6 +90,10 @@ START - ABOUT
 .wrapper-tab {
   margin-top: 20px;
   cursor: pointer;
+  position: relative;
+  left: -5px;
+  
+  
 }
 
 .tab {
@@ -99,13 +102,14 @@ START - ABOUT
   font-weight: 500;
   border-radius: 30px;
   padding: 5px 10px;
-  color: #828282;
+  color: var(--gray-3);
+  
 }
 
 /* design of tab if active */
 .active > .tab {
-  color: #fff;
-  background-color: #02d464;
+  color: var(--white);
+  background-color: var(--main-green);
 }
 
 .about-section-data {
@@ -113,7 +117,7 @@ START - ABOUT
   margin-left: 50px;
   padding-top: 20px;
   padding-left: 50px;
-  border-left: 1px solid #e5e5e5;
+  border-left: 1px solid var(--slight-grey);
 }
 
 .about-section-data.active {
@@ -125,7 +129,7 @@ START - ABOUT
 }
 
 .wrapper-data .label {
-  color: #828282;
+  color: var(--gray-3);
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 4px;
@@ -134,9 +138,8 @@ START - ABOUT
 
 .wrapper-data .data {
   font-size: 20px;
-  color: #333;
+  color: var(--gray-2);
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
 }
 
 /* 
@@ -153,10 +156,8 @@ START - STORIES
 
 .wrapper-stories {
   min-height: 340px;
-  background-color: #fff;
-  color: #4f4f4f;
   border-radius: 16px;
-  box-shadow: 0 0 3px 3px #f0e7e7; /* BOX SHADOW */
+  box-shadow: var(--box-shadow);
   margin-top: 50px;
   margin-bottom: 40px;
   padding: 30px;
@@ -179,10 +180,12 @@ START - STORIES
 }
 
 .story-text {
+  color: var(--gray-2);
   margin-bottom: 10px;
 }
 
 .story-author {
+  color: var(--gray-3);
   display: block;
   font-weight: 500;
 }
@@ -238,7 +241,7 @@ START - WRAPPER ACTIONS
   justify-content: flex-start;
 
   /* general css for this section */
-  color: #333;
+  color: var(--gray-1);
   font-size: 16px;
 }
 
@@ -246,7 +249,7 @@ START - WRAPPER ACTIONS
   border-radius: 30px;
   height: 40px;
   padding: 0 15px 0 5px;
-  background-color: #d8f8e7;
+  background-color: var(--bg-green);
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -256,7 +259,7 @@ START - WRAPPER ACTIONS
   font-weight: 600;
 }
 .actions-span {
-  color: #02d464;
+  color: var(--main-green);
 }
 
 .pagination {
@@ -271,7 +274,7 @@ START - WRAPPER ACTIONS
 }
 
 .pagination .current-page {
-  color: #02d464;
+  color: var(--main-green);
 }
 
 .pagination .current-page::after {
@@ -279,7 +282,7 @@ START - WRAPPER ACTIONS
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #02d464;
+  background-color: var(--main-green);
 }
 
 /* 
@@ -289,5 +292,82 @@ END - WRAPPER ACTIONS
 ================  */
 
 
+
 /* Media Query */
 
+
+@media only screen and (max-width:768px){
+  .about-section-data{
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-top:1px solid var(--slight-grey) ;
+    
+  } 
+
+  .about-section-tabs{
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .about-section{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .full-name .pagination{
+    font-size: 20px;
+  }
+
+  .position , .header{
+    font-size:18px;
+  }
+  
+  .tab , .label{
+    font-size:14px
+  }
+
+  data{
+    font-size:16px
+  }
+
+  .wrapper-story{
+    font-size:16px
+  }
+
+  .pagination , .actions-span{
+    font-size:14px
+  }
+
+  
+
+
+  
+
+  
+
+
+
+  
+}
+
+
+
+
+
+
+
+/* End Media Query */
+
+
+/* SINAQ */
+
+.backgorund{
+  width: 100%;
+  height: 300px;
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
