@@ -415,7 +415,6 @@ END - WRAPPER ACTIONS
 }
 .two-input .input-area{
   width: 100%;
-  
 }
 .two-input .input-area input{
   background: rgba(216, 248, 231, 0.25);
@@ -427,7 +426,6 @@ END - WRAPPER ACTIONS
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-
 }
 .two-input .input-area:nth-child(1){
   margin-right: 20px;
