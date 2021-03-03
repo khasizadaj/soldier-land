@@ -15,11 +15,26 @@ START - HEAD
   width: 100%;
 }
 
-.background-image {
-  width: 100%;
+.wrapper-background {
+  position: relative;
+  overflow: hidden;
   height: 260px;
   border-radius: 16px;
+}
+.overlay-bg {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.25);
+}
+.background-image {
+  width: -120%;
+  z-index: 1;
   position: relative;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper-profile-image {
@@ -28,6 +43,7 @@ START - HEAD
   overflow: hidden;
   position: absolute;
   left: 50%;
+  z-index: 4;
   transform: translate(-50%, -50%);
   border: 3px solid var(--white);
   border-radius: 50%;
@@ -37,6 +53,7 @@ START - HEAD
 .profile-image {
   display: block;
   margin: auto;
+  z-index: 3;
   position: relative;
   height: 100%;
   width: 100%;
@@ -297,6 +314,21 @@ END - WRAPPER ACTIONS
 
 
 @media only screen and (max-width:768px){
+  /* PROFILE */
+  .wrapper-background {
+    height: 220px;
+    border-radius: 8px;
+  }
+  .background-image {
+    width: -120%;
+    z-index: 1;
+    position: relative;
+    top: -110%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  /* ABOUT */
   .about-section-data{
     border-left: none;
     margin-left: 0;
@@ -363,12 +395,12 @@ END - WRAPPER ACTIONS
 
 /* SINAQ */
 
-.backgorund{
+/* .backgorund{
   width: 100%;
-  height: 300px;
-  background-image: url('../images/background.jpg');
+  min-height: 300px;
+  background-image: url('../images/cover.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
-}
+} */
