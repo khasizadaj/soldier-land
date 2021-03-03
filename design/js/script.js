@@ -29,12 +29,13 @@ tabs.forEach((tab, index) => {
 
 
 
-// Add Story
+//Add Story
 
-// const addStory = document.querySelector('.actions-span')
+const addStory = document.querySelector('.actions-span')
+document.querySelector('.story-form').style.display = 'none'
 
-// addStory.addEventListener('click' , function(){
-//         document.querySelector('.empty-stories').style.display = 'none'
-//         document.querySelector('.story-form').style.display = 'block'
-// })
+addStory.addEventListener('click' , function(){
+        document.querySelector('.empty-stories').style.display = 'none'
+        document.querySelector('.story-form').style.display = 'block'
+})
    
