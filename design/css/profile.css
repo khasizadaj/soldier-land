@@ -4,6 +4,8 @@ START - HEAD
 
 */
 
+
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -376,31 +378,69 @@ END - WRAPPER ACTIONS
     font-size:14px
   }
 
+  .two-input input{
+    width: 100%;
+    margin-right: 0;
+  }
 
-  
-
-
-
-  
+  .two-input{
+    display: flex;
+    flex-direction: column;
+  }
 }
-
-
-
-
-
-
 
 /* End Media Query */
 
 
-/* SINAQ */
+/* STORY FORM */
+.input-area{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
-/* .backgorund{
+.input-area label{
+  /* display: flex;
+  justify-content: center; */
+  margin-bottom: 10px;
+  color: #BDBDBD;
+  position:relative;
+  right: -4px;
+
+  
+}
+.two-input{
+  display: flex;
+  
+}
+.two-input .input-area{
   width: 100%;
-  min-height: 300px;
-  background-image: url('../images/cover.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  
+}
+.two-input .input-area input{
+  background: rgba(216, 248, 231, 0.25);
+  border: 1px solid #02D464;
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 
-} */
+}
+.two-input .input-area:nth-child(1){
+  margin-right: 20px;
+}
+.story-input textarea{
+  background: rgba(216, 248, 231, 0.25);
+  border: 1px solid #BDBDBD;
+  border-radius: 16px;
+  height: 200px;
+  outline: none;
+  padding: 15px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BDBDBD;
+  font-family:inherit
+}

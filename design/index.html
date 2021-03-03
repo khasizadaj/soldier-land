@@ -74,10 +74,11 @@
 
       <div class="wrapper-stories">
         <div class="wrapper-header">
-          <h1 class="header stories-header">Hekayələr</h1>
-        </div>
+          <!-- <h1 class="header stories-header">Hekayələr</h1> -->
+          <h1 class="header stories-header">Hekayə əlavə et</h1>
+        </div> 
 
-        <!-- <div class="empty-stories">
+        <div class="empty-stories">
           <div class="story-info">
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -87,11 +88,39 @@
 
           <div class="add-story add-story--centered wrapper-actions-item">
             <img src="./images/add.png" alt="" />
-            <span class="actions-span">Hekayə əlavə et</span>
+            <span class="actions-span" style="cursor: pointer;">Hekayə əlavə et</span>
           </div>
-        </div> -->
+        </div> 
 
-        <ul class="stories"> 
+
+        <div class="story-form">
+
+          <form >
+            <div class="form-content">
+              <div class="two-input">
+                <div class="name-input input-area">
+                  <label for="name">Ad</label>
+                  <input type="text " id="name" placeholder="Murad">
+                </div>
+
+                <div class="number-input input-area">
+                  <label for="number">Nömrə</label>
+                  <input type="tel" id="number" placeholder="+994774581220">
+                </div>
+              </div>
+
+              <div class="story-input input-area">
+                <label for="story">Hekayə</label>
+                <textarea placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, error! Minus, saepe facilis, esse quis suscipit eos ut possimus consequuntur odio, molestiae et neque dolore. Vel impedit maxime itaque in!"></textarea>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+
+
+        <!-- <ul class="stories"> 
           <div class="wrapper-story">
             <li class="story-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
@@ -164,7 +193,7 @@
             </li>
             <span class="story-author">- Anonim</span>
           </div>
-        </ul> 
+        </ul>  -->
       </div>
 
       <div class="wrapper-actions">
