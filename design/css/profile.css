@@ -17,11 +17,26 @@ START - HEAD
   width: 100%;
 }
 
-.background-image {
-  width: 100%;
+.wrapper-background {
+  position: relative;
+  overflow: hidden;
   height: 260px;
   border-radius: 16px;
+}
+.overlay-bg {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.25);
+}
+.background-image {
+  width: -120%;
+  z-index: 1;
   position: relative;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper-profile-image {
@@ -30,6 +45,7 @@ START - HEAD
   overflow: hidden;
   position: absolute;
   left: 50%;
+  z-index: 4;
   transform: translate(-50%, -50%);
   border: 3px solid var(--white);
   border-radius: 50%;
@@ -39,6 +55,7 @@ START - HEAD
 .profile-image {
   display: block;
   margin: auto;
+  z-index: 3;
   position: relative;
   height: 100%;
   width: 100%;
@@ -299,6 +316,21 @@ END - WRAPPER ACTIONS
 
 
 @media only screen and (max-width:768px){
+  /* PROFILE */
+  .wrapper-background {
+    height: 220px;
+    border-radius: 8px;
+  }
+  .background-image {
+    width: -120%;
+    z-index: 1;
+    position: relative;
+    top: -110%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  /* ABOUT */
   .about-section-data{
     border-left: none;
     margin-left: 0;
@@ -355,24 +387,12 @@ END - WRAPPER ACTIONS
     display: flex;
     flex-direction: column;
   }
-
-
-  
-
-
-
-  
 }
-
-
-
-
-
-
 
 /* End Media Query */
 
 
+<<<<<<< HEAD
 /* BACKGORUND IMAGE */
 
 .backgorund{
@@ -390,17 +410,25 @@ END - WRAPPER ACTIONS
 
 /* Wrapper FORM */
 .wrapper-input{
+=======
+/* STORY FORM */
+.input-area{
+>>>>>>> dcf00edacad3890575c5e074f47074dc31d15d64
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-
-
 }
 
+<<<<<<< HEAD
 
 
 
 .wrapper-input label{
+=======
+.input-area label{
+  /* display: flex;
+  justify-content: center; */
+>>>>>>> dcf00edacad3890575c5e074f47074dc31d15d64
   margin-bottom: 10px;
   color: #BDBDBD;
   position:relative;
@@ -408,18 +436,24 @@ END - WRAPPER ACTIONS
 
   
 }
-
 .two-input{
   display: flex;
   
 }
+<<<<<<< HEAD
 
 .two-input .wrapper-input{
+=======
+.two-input .input-area{
+>>>>>>> dcf00edacad3890575c5e074f47074dc31d15d64
   width: 100%;
-  
 }
+<<<<<<< HEAD
 
 .two-input .wrapper-input input{
+=======
+.two-input .input-area input{
+>>>>>>> dcf00edacad3890575c5e074f47074dc31d15d64
   background: rgba(216, 248, 231, 0.25);
   border: 1px solid #02D464;
   border-radius: 10px;
@@ -429,14 +463,20 @@ END - WRAPPER ACTIONS
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
-
 }
+<<<<<<< HEAD
 
 .two-input .wrapper-input:nth-child(1){
   margin-right: 20px;
 }
 
 .input-story{
+=======
+.two-input .input-area:nth-child(1){
+  margin-right: 20px;
+}
+.story-input textarea{
+>>>>>>> dcf00edacad3890575c5e074f47074dc31d15d64
   background: rgba(216, 248, 231, 0.25);
   border: 1px solid #BDBDBD;
   border-radius: 16px;
@@ -448,5 +488,3 @@ END - WRAPPER ACTIONS
   color: #BDBDBD;
   font-family:inherit
 }
-
-/* END STORY FORM */
