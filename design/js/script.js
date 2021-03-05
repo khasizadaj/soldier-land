@@ -32,10 +32,10 @@ tabs.forEach((tab, index) => {
 //Add Story
 
 const addStory = document.querySelector('.actions-span')
-document.querySelector('.story-form').style.display = 'none'
+document.querySelector('.wrapper-form').style.display = 'none'
 
 addStory.addEventListener('click' , function(){
         document.querySelector('.empty-stories').style.display = 'none'
-        document.querySelector('.story-form').style.display = 'block'
+        document.querySelector('.wrapper-form').style.display = 'block'
 })
    
