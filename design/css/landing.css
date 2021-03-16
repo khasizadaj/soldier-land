@@ -25,10 +25,14 @@
   color: #fafafa;
   border-radius: 30px;
   padding: 10px 0;
+
+  /* fixed width */
   width: 65%;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
+
+  /* double width */
   width: 40%;
   cursor: pointer;
 }
@@ -50,6 +54,8 @@
 /* ABOUT SECTION */
 
 .about-section {
+  text-align: center;
+  /* no fixed height */
   height: 521px;
   background-color: var(--main-green);
   display: flex;
@@ -73,13 +79,9 @@
   margin-right: 15px;
 }
 
-.p-big-first-line {
-  display: flex;
-  justify-content: center;
-}
-
 .p-small {
-  width: 615px;
+  /* no fixed width */
+  width: 915px;
   font-family: Montserrat;
   font-style: normal;
   font-size: 20px;
@@ -90,28 +92,26 @@
   font-size: 20px;
 }
 
-.p-small-second-line {
-  display: flex;
-  justify-content: center;
+.p-new-line {
+  display: block;
 }
 
 .arrow {
-  width: 40%;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgb(0, 0, 0);
   margin-bottom: 10px;
 }
 
-.horizontal:nth-child(3) {
+.horizontal {
+  width: min(40%, 450px);
   margin-bottom: 50px;
 }
 
 .vertical {
-  transform: rotate(90deg);
-  width: 400px;
+  /* transform: ; */
+  width: 150px;
   position: absolute;
   /* bottom: -200px; */
-  transform-origin: center;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(90deg);
 }
