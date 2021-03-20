@@ -107,11 +107,57 @@
 }
 
 .vertical {
-  /* transform: ; */
   width: 150px;
   position: absolute;
-  /* bottom: -200px; */
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) rotate(90deg);
+}
+
+/* hero-birthdays */
+
+.hero-birthdays {
+  margin-top: 100px;
+}
+
+.hero-birthdays p,
+h1 {
+  text-align: center;
+}
+
+.hero-birthdays h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #02d464;
+}
+
+.hero-birthdays p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #4f4f4f;
+  margin-top: 20px;
+}
+
+.table-div {
+  box-shadow: 0px 0px 14px rgba(216, 216, 216, 0.65);
+  border-radius: 16px;
+  background-color: #fefefe;
+}
+
+.hero-birthdays table {
+  margin-top: 60px;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-birthdays table tr {
+  width: 100%;
+}
+
+.hero-birthdays table tr td {
+  border-bottom: 1px solid #4f4f4f;
+  padding: 20px 20px;
+  font-weight: 500;
+  font-size: 20px;
 }
