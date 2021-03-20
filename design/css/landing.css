@@ -152,12 +152,16 @@ h1 {
 }
 
 .hero-birthdays table tr {
-  width: 100%;
+  border-bottom: 1px solid #4f4f4f;
 }
 
 .hero-birthdays table tr td {
-  border-bottom: 1px solid #4f4f4f;
   padding: 20px 20px;
   font-weight: 500;
   font-size: 20px;
+  color: #4f4f4f;
+}
+
+.hero-birthdays table tr:last-child {
+  border-bottom: none;
 }
