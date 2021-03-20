@@ -165,3 +165,61 @@ h1 {
 .hero-birthdays table tr:last-child {
   border-bottom: none;
 }
+
+
+/* MAPPY */
+.map-section {
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.region-nav {
+  color: var(--main-green);
+  font-weight: 600;
+}
+.map-body {
+  text-align: center;
+}
+.map-text {
+  font-size: 40px;
+  font-weight: 500;
+}
+.map-text-highlighted {
+  font-size: 50px;
+  font-weight: bold;
+}
+.map-extra-info {
+  margin: auto;
+  margin-top: 60px;
+  font-size: 16px;
+  width: min(600px, 80%);
+  color: var(--gray-3);
+}
+.map-img {
+  height: 90%;
+  min-width: 400px;
+  position: absolute;
+  top: 50px;
+  right: 7.5vw;
+  z-index: -1;
+}
+.map-img svg{
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 1300px) {
+  .map-img {
+    left: calc(1100px + (100% - 1100px)/2 - 300px);
+  }
+}
