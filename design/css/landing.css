@@ -124,6 +124,7 @@
 .hero-birthdays .container p,
 h1 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .today-heroes {
@@ -140,6 +141,7 @@ h1 {
 }
 
 .table-div {
+  margin-top: 30px;
   box-shadow: 0px 0px 14px rgba(216, 216, 216, 0.65);
   border-radius: 16px;
   background-color: #fefefe;
@@ -148,7 +150,6 @@ h1 {
 .hero-table {
   margin-top: 60px;
   border-collapse: collapse;
-  text-align: center;
   width: 100%;
 }
 
@@ -205,9 +206,10 @@ h1 {
 }
 body {
   overflow-x: hidden;
+}
+/* MAPPY */
 
-  /* MAPPY */
-  /* .map-section{ */
+.map-section {
   position: relative;
   min-height: 500px;
   display: flex;
@@ -215,15 +217,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-/* .map-section {
-  position: relative;
-  min-height: 500px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 .navigation {
   position: absolute;
@@ -270,5 +263,13 @@ body {
 @media (min-width: 1300px) {
   .map-img {
     left: calc(1100px + (100% - 1100px) / 2 - 300px);
+  }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
   }
 }

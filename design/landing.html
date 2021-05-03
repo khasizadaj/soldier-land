@@ -28,7 +28,7 @@
         </div>
 
         <div class="land-image">
-          <img src="./images/hero-image.png" alt="" />
+          <img id="hero-image" src="./images/hero-image.png" alt="" />
         </div>
       </div>
     </div>
@@ -61,9 +61,9 @@
     <div class="section map-section">
       <div class="container">
         <div class="navigation">
-          <img class="arrow-up" src="/design/images/arrow-up.svg" alt="">
+          <img class="arrow-up" src="./images/arrow-up.svg" alt="">
           <span class="region-nav" id="js-region-nav">Laçın</span>
-          <img class="arrow-down" src="/design/images/arrow-down.svg" alt="">
+          <img class="arrow-down" src="./images/arrow-down.svg" alt="">
         </div>
         <div class="map-body">
           <h1 class="map-text">
@@ -115,8 +115,8 @@
         <p>Bu hissədə qeyd edilən igidlərin bugün doğum günüdür.</p>
 
         <div class="table-div">
-          <table>
-            <tr>
+          <table class="hero-table">
+            <tr class="hero-table-row">
 
               <td>Abakarov Nail Müzəffər</td>
               <td>Əsgər</td>
@@ -172,6 +172,15 @@
       </div>
     </div>
       
+
+
+
+    <script>
+      if(screen.width < 768){
+        document.getElementById('hero-image').src = './images/Vector.png'
+ 
+      }
+    </script>
 
     
 
