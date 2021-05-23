@@ -77,7 +77,7 @@
   font-size: 40px;
   line-height: 140%;
   color: #ffffff;
-  width: 976px;
+  width: 85%;
 }
 
 .span-big {
@@ -87,7 +87,7 @@
 
 .p-small {
   /* no fixed width */
-  width: 915px;
+  width: 85%;
   font-family: Montserrat;
   font-style: normal;
   font-size: 20px;
@@ -118,6 +118,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) rotate(90deg);
+  /* transform-origin: center; */
 }
 
 /* hero-birthdays */
