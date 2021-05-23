@@ -57,7 +57,7 @@
 
 .about-section {
   text-align: center;
-  padding: 150px;
+  padding: 150px 0px;
   background-color: var(--main-green);
   display: flex;
   justify-content: center;
@@ -100,7 +100,7 @@
   font-size: 40px;
   line-height: 140%;
   color: var(--bright-white);
-  width: 85%;
+  width: max(360px, 85%);
 }
 
 .span-big {
@@ -109,8 +109,7 @@
 }
 
 .p-small {
-  /* no fixed width */
-  width: 85%;
+  width: max(360px, 85%);
   font-family: Montserrat;
   font-style: normal;
   font-size: 20px;
@@ -264,3 +263,21 @@ body {
 }
 
 /* RESPONSIVE */
+@media screen and (max-width: 400px) {
+  .p-big {
+    font-size: 22px;
+  }
+
+  .p-small {
+    font-size: 16px;
+  }
+
+  .p-big,
+  .p-small {
+    width: 85%;
+  }
+
+  .hero-section {
+    overflow-x: hidden;
+  }
+}
