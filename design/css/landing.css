@@ -294,6 +294,93 @@ body {
   font-size: 16px;
   color: var(--gray-2);
 }
+
+/* HERO RESPONSIVE 2 */
+
+/* 
+1. Əgər telefon üçün dizyn ediriksə, o css-də 
+özünü əks etdirməlidir, class adlarında olmasa,
+daha yaxşı olar. Çünki bu dizaynı kompüter üçün
+də dizayn edəcəyik.
+
+2. Flex-box 1 xətt üzərində işləməyə icazə verir.
+əgər sütun və sətirlər varsa, grid ən doğru seçim 
+olar. Ona görə də grid-dən istifadə etdim.
+
+3. Maksimum şəkildə elementlərin öz işlədilmə 
+yerinə görə seç. Əgər mətndirsə <p>, başlıqdırsa  <h>,
+inputu və ya hansısa məlumatı izah edirsə <label> və s.
+
+4. Elə kod yaz ki, sonra onu kompüterə keçirdəndə 
+əziyyət çəkməyəsən. Həmişə o da ağlının ucunda qalsın.
+
+5. Həmişə çalış elemntlərin ilkin özəlliklərindən istifadə 
+edəsən. Məsələn əgər 3 div-i alt-alta qoymaq istəyirsənsə,
+onların ətrafında olan div-ə flex verməsən belə alt-alta görünəcək.
+
+    .hero-responsive {
+      ....
+      display: flex;
+      flex-direction: column;
+      ....
+    }
+
+*/
+
+@media screen and (max-width: 768px) {
+  .hero-birthdays-mem {
+    position: relative;
+    background-color: #fefefe;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0;
+    display: grid;
+    gap: 20px 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "name name name name name name"
+      "birthday birthday birthday rank rank rank"
+      "medals medals medals medals medals .";
+  }
+  .cell {
+    position: relative;
+    padding-top: 25px;
+  }
+  .cell--name {
+    grid-area: name;
+  }
+  .cell--birthday {
+    grid-area: birthday;
+  }
+  .cell--rank {
+    grid-area: rank;
+  }
+  .cell--medals {
+    grid-area: medals;
+  }
+  .cell-label {
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--gray-4);
+  }
+  .cell-data {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: var(--gray-2);
+  }
+  .clickable-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 400px) {
   .p-big {

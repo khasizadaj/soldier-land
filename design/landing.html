@@ -255,40 +255,65 @@
 
         <div class="hero-responsive">
           <div class="container">
-    
             <div class="hero-responsive-section first-responsive">
               <p class="first-p">Adı, soyadı, ata adı</p>
-              <p class = "second-p">Abasov Ağababa Səfər </p>
+              <p class="second-p">Abasov Ağababa Səfər</p>
             </div>
-    
+
             <div class="hero-responsive-section second-responsive">
               <div class="responsive-birthday">
-                <p class = "first-p">Doğum tarixi</p>
-                <p class = "second-p">24.07.2001</p>
+                <p class="first-p">Doğum tarixi</p>
+                <p class="second-p">24.07.2001</p>
               </div>
-    
+
               <div class="responsive-rank">
-                <p class = "first-p">Rütbə</p>
-                <p class = "second-p">Esger</p>
+                <p class="first-p">Rütbə</p>
+                <p class="second-p">Esger</p>
               </div>
             </div>
-    
+
             <div class="hero-responsive-section third-responsive">
               <div class="medallari">
-                <p class = "first-p">Medal</p>
-                <p class = "second-p">“Vətən uğrunda” medalı</p>
+                <p class="first-p">Medal</p>
+                <p class="second-p">“Vətən uğrunda” medalı</p>
               </div>
-    
+
               <div class="responsive-arrow">
-                <img src="./images/vector.png" alt="">
+                <img src="./images/vector.png" alt="" />
               </div>
-              
             </div>
-    
-            
+            `
           </div>
         </div>
-        
+
+        <!-- generic and clear class names -->
+        <!-- use tags wisely, i'd recommend you to check out 
+          famous ones from MDN -->
+        <div class="hero-birthdays-mem">
+          <div class="cell cell--name">
+            <label class="cell-label">Adı, soyadı, ata adı</label>
+            <p class="cell-data">Abakarov Nail Müzəffər Azərbaycan ordusu</p>
+          </div>
+
+          <div class="cell cell--birthday">
+            <label class="cell-label">Doğum tarixi</label>
+            <p class="cell-data">24.07.1990</p>
+          </div>
+
+          <div class="cell cell--rank">
+            <label class="cell-label">Rütbə</label>
+            <p class="cell-data">MAHHXHQ kiçikçavuş</p>
+          </div>
+
+          <div class="cell cell--medals">
+            <label class="cell-label first-p">Medal</label>
+            <p class="cell-data second-p">“Vətən uğrunda” medalı</p>
+          </div>
+
+          <div class="clickable-arrow">
+            <img src="./images/arrow-right.svg" alt="" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -308,7 +333,5 @@
         </div>
       </div>
     </div>
-
-    
   </body>
 </html>
