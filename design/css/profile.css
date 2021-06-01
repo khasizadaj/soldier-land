@@ -4,6 +4,8 @@ START - HEAD
 
 */
 
+
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -15,11 +17,26 @@ START - HEAD
   width: 100%;
 }
 
-.background-image {
-  width: 100%;
+.wrapper-background {
+  position: relative;
+  overflow: hidden;
   height: 260px;
   border-radius: 16px;
+}
+.overlay-bg {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.25);
+}
+.background-image {
+  width: -120%;
+  z-index: 1;
   position: relative;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .wrapper-profile-image {
@@ -28,6 +45,7 @@ START - HEAD
   overflow: hidden;
   position: absolute;
   left: 50%;
+  z-index: 4;
   transform: translate(-50%, -50%);
   border: 3px solid var(--white);
   border-radius: 50%;
@@ -37,6 +55,7 @@ START - HEAD
 .profile-image {
   display: block;
   margin: auto;
+  z-index: 3;
   position: relative;
   height: 100%;
   width: 100%;
@@ -90,6 +109,10 @@ START - ABOUT
 .wrapper-tab {
   margin-top: 20px;
   cursor: pointer;
+  position: relative;
+  left: -5px;
+  
+  
 }
 
 .tab {
@@ -99,6 +122,7 @@ START - ABOUT
   border-radius: 30px;
   padding: 5px 10px;
   color: var(--gray-3);
+  
 }
 
 /* design of tab if active */
@@ -212,7 +236,7 @@ START - EMPTY STORIES
 }
 
 /* to center button properly */
-.add-story--centered {
+.add-story.add-story--centered {
   margin-top: 30px;
   margin-right: 0px;
 }
@@ -248,7 +272,7 @@ START - WRAPPER ACTIONS
   display: flex;
   align-items: center;
   font-weight: 600;
-  margin-right: 30px;
+  margin-right: 30px; 
 }
 .share {
   font-weight: 600;
@@ -284,4 +308,155 @@ START - WRAPPER ACTIONS
 
 END - WRAPPER ACTIONS
 
-================  */
+/* Wrapper FORM */
+.wrapper-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.story-label{
+  margin-bottom: 10px;
+  color: var(--gray-3);
+  position:relative;
+  right: -4px;
+  font-size: 16px;
+}
+.two-input{
+  display: flex;
+}
+
+.two-input .wrapper-input{
+  width: 100%;
+}
+
+.story-input{
+  background: rgba(216, 248, 231, 0.25);
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #BDBDBD;
+  font-family: inherit;
+}
+
+.story-input:focus{
+  border-color:var(--gray-2) ;
+}
+
+
+.wrapper-input:nth-child(1){
+  margin-right: 20px;
+}
+
+.story-input-textarea{
+  min-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px 10px;
+}
+
+.story-input.success{
+  border-color: var(--main-green);
+}
+
+.story-input.error{
+  border-color: red;
+}
+
+.message{
+  padding:5px 10px ;
+}
+
+.message.error{
+  color: red;
+}
+
+.message.success{
+  color: var(--main-green);
+}
+
+/* Media Query */
+
+
+@media only screen and (max-width:768px){
+  /* PROFILE */
+  .wrapper-background {
+    height: 220px;
+    border-radius: 8px;
+  }
+  .background-image {
+    width: -120%;
+    z-index: 1;
+    position: relative;
+    top: -110%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  /* ABOUT */
+  .about-section-data{
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+    border-top:1px solid var(--slight-grey) ;
+    
+  } 
+
+  .about-section-tabs{
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .about-section{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .full-name .pagination{
+    font-size: 20px;
+  }
+
+  .position , .header{
+    font-size:18px;
+  }
+  
+  .tab {
+    font-size:14px
+  }
+  
+  .wrapper-data .label {
+    color: var(--gray-3);
+    font-size: 14px;
+  }
+
+  .wrapper-data .data {
+    font-size: 18px;
+  }
+  
+  .wrapper-story{
+    font-size:16px
+  }
+
+  .pagination , .actions-span{
+    font-size:14px
+  }
+
+  .two-input input{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .two-input{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .story-input,.story-label{
+    font-size: 14px;
+  }
+
+}

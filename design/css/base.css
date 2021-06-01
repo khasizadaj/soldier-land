@@ -11,11 +11,12 @@
   --gray-1: #333333;
   --gray-2: #4f4f4f;
   --gray-3: #828282;
-  --gray-4: #BDBDBD;
+  --gray-4: #bdbdbd;
   --slight-grey: #e5e5e5;
-  --white: #fefefe;
-  --main-green: #02D464;
-  --bg-green: #D8F8E7;
+  --white: #fafafa;
+  --bright-white: #ffffff;
+  --main-green: #02d464;
+  --bg-green: #d8f8e7;
   --box-shadow: 0 0 12px rgb(216, 216, 216, 0.65);
 }
 @media (max-width: 768px) {
@@ -26,6 +27,10 @@
 html {
   font-family: "Montserrat", sans-serif;
   background-color: var(--white);
+}
+
+.section {
+  margin-bottom: 80px;
 }
 
 ul,
@@ -46,4 +51,3 @@ ol {
   font-weight: 600;
   margin-bottom: 20px;
 }
-

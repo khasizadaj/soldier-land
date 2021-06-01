@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title></title>
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/profile.css" />
 
@@ -18,7 +18,10 @@
     <div class="container">
       <div class="profile">
         <div class="wrapper-images">
-          <img src="./images/background.jpg" class="background-image" />
+          <div class="wrapper-background">
+            <div class="overlay-bg"></div>
+            <img src="./images/cover.jpg" class="background-image" />
+          </div>
           <div class="wrapper-profile-image">
             <img src="./images/xudayar.jpg" class="profile-image" />
           </div>
@@ -71,10 +74,11 @@
 
       <div class="wrapper-stories">
         <div class="wrapper-header">
-          <h1 class="header stories-header">Hekayələr</h1>
-        </div>
+          <!-- <h1 class="header stories-header">Hekayələr</h1> -->
+          <h1 class="header stories-header">Hekayə əlavə et</h1>
+        </div> 
 
-        <!-- <div class="empty-stories">
+        <div class="empty-stories">
           <div class="story-info">
             <p>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -84,11 +88,46 @@
 
           <div class="add-story add-story--centered wrapper-actions-item">
             <img src="./images/add.png" alt="" />
-            <span class="actions-span">Hekayə əlavə et</span>
+            <span class="actions-span" style="cursor: pointer;">Hekayə əlavə et</span>
           </div>
-        </div> -->
+        </div> 
 
-        <ul class="stories">
+
+        <div class="wrapper-form">
+
+          <form >
+            <div class="form-content">
+              <div class="two-input">
+                <div class="wrapper-input">
+                  <label for="name" class="story-label">Ad</label>
+                  <input class="story-input-name story-input error" type="text " id="name" placeholder="Murad">
+                  <small class="message error">Error!</small>
+                </div>
+
+                <div class="wrapper-input">
+                  <label for="telephone" class="story-label">Nömrə</label>
+                  <input class="story-input-number story-input" type="tel" id="telephone" placeholder="+994774581220">
+                </div>
+              </div>
+
+              <div class="wrapper-input">
+                <label for="story" class="story-label">Hekayə</label>
+                <textarea class="story-input story-input-textarea" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, error! Minus, saepe facilis, esse quis suscipit eos ut possimus consequuntur odio, molestiae et neque dolore. Vel impedit maxime itaque in!"></textarea>
+              </div>
+
+              <!-- <div class="share wrapper-actions-item">
+                <img src="./images/share-alt 2.png" alt="" />
+      
+                <span class="actions-span">Qəhrəmanı paylaş</span>
+              </div> -->
+            </div>
+          </form>
+
+        </div>
+
+
+
+        <!-- <ul class="stories"> 
           <div class="wrapper-story">
             <li class="story-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
@@ -161,14 +200,14 @@
             </li>
             <span class="story-author">- Anonim</span>
           </div>
-        </ul>
+        </ul>  -->
       </div>
 
       <div class="wrapper-actions">
         <!-- <div class="add-story wrapper-actions-item">
           <img src="./images/add.png" alt="" />
           <span class="actions-span">Hekayə əlavə et</span>
-        </div> -->
+        </div>  -->
 
         <div class="share wrapper-actions-item">
           <img src="./images/share-alt 2.png" alt="" />
