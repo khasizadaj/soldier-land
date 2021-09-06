@@ -1,7 +1,7 @@
 # Future plans
 
 ## Back end
-- [ ] Initializing Django project
+- [x] Initializing Django project
 - [ ] Deciding about Django structure, i.e. app names
 - [ ] Designing database structure for each apps
 - [ ] Configuring templates with dummy data (data that is not used in production)
@@ -14,8 +14,8 @@
 
 ## Front end
 - [ ] Landing page
-    - [ ] CTA
+    - [ ] CTA (redesign and code)
     - [ ] minor fixes
-- [ ] Search page
+- [ ] Search page 
 - [ ] Navigation bar
 - [ ] Footer
